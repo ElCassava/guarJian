@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guarJian</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <!-- bag navbar  -->
+    <nav>
+        <div class="logo">
+            <img src="/aset/logo.png" alt="Logo guarJian">
+        </div>
+        <div id = "menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="promotion.html">Promotion</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="heading"> <span>CONTACT US</span>
+            </h1>
+        </div>
+
+        
+        <form action="" class="form" id="form">
+            <div class="form-control">
+                <label for="Name">Name</label>
+                <input type="text" name="" id="name" placeholder="Enter your name"autocomplete="off">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Email">Email</label>
+                <input type="email" name="" id="email" placeholder="Enter your email" autocomplete="off">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Password">Password</label>
+                <input type="password" name="" id="password" placeholder="Enter your Password" autocomplete="off">
+                <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                <label for="Adress">Address</label>
+                <input type="text" name="" id="address" placeholder="Enter your adress" autocomplete="off">
+                <small>Error message</small>
+                
+            </div>
+
+            <div class="form-control">
+                <label for="Check">I agree to the terms and agreement</label>
+                <input type="checkbox" name="" id="checkbox" placeholder="">
+                <small>Error message</small>
+            </div>
+            <input type="submit" value="SUBMIT" class="btn">
+        </form>
+    
+    </div>   
+        
+    <script src="/contact.js"></script>
+</body>
+</html>

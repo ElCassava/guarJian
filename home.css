@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image:url(aset/background.jpg);
+    background-size: cover; 
+    background-position: center;
+    height: 120vh;
+    z-index: -1;
+    
+}
+
+/* navbar keseluruhan */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: transparent;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+/* option navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* text navbar */
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: larger;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* logo di navbar */
+nav div img{
+    width: 349px;
+    height: 100px;
+    display: flex;
+}
+
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+/* burger icon */
+
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+}
+
+/* pembatasan  */
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    }
+
+    .box-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    /* buat burger jsnya */
+    nav ul.hidden{
+        display: none;
+    }
+
+    /* burger kl kecil */
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* categories */
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:#FF4A4A;
+
+}
+
+/* background categories */
+
+.heading span{
+    background: white;
+    display: inline-block;
+    padding: 5rem 3rem;
+    border-radius: 25px;
+    
+}
+
+/* categories keseluruhan */
+.categories{
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    margin-top: 200px;
+    background-color: #B9FFF8;
+    padding: 4rem;
+    border-radius: 25px;
+    z-index: 5;
+}
+
+/* categories gambar */
+.categories .box-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.categories .box-container .box{
+    outline-offset: -1rem;
+    outline: black;
+    box-shadow:grey;
+    /* padding: 1rem 0.5rem; */
+}
+
+.categories .box-container .box:hover img{
+    transform: scale(.9);
+}
+

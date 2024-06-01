@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9F8F9;
+}
+
+/* navbar keseluruhan */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: transparent;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+/* option navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* text navbar */
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: larger;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* logo di navbar */
+nav div img{
+    width: 349px;
+    height: 100px;
+    display: flex;
+}
+/* navbar di-hover */
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+/* burger icon */
+
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+}
+
+/* pembatasan  */
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    }
+
+    .box-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    /* buat burger jsnya */
+    nav ul.hidden{
+        display: none;
+    }
+
+    /* burger kl kecil */
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+}
+
+/* promotion */
+.heading{
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color:#FF4A4A;
+
+}
+
+/* promotion */
+
+.heading span{
+    display: inline-block;
+    padding: 5rem 3rem;
+    
+}
+
+/* promotion keseluruhan */
+.promotion{
+    padding: 4rem;
+    border-radius: 25px;
+    z-index: 5;
+}
+
+/* promotion gambar */
+.promotion .box-container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.promotion .box-container .box{
+    outline-offset: -1rem;
+    outline: black;
+    box-shadow:grey;
+    padding: 1rem 0.5rem;
+    
+}
+
+.product .box-container .box:hover img{
+    transform: scale(.9);
+}
+
+/* product gambar */
+.product .box-container{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    padding-left: 5rem;
+}
+
+
+.product-preview{
+    position: fixed;
+    top: 0; left: 0;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-preview .preview{
+    display: none;
+    padding: 2rem;
+    margin: 2rem;
+    position: relative;
+}
+
+.product-preview .preview.active{
+    display: inline-block;
+    
+}
+
+.preview{
+    position: relative;
+}
+
+.product-preview .preview img{
+    height: 25rem;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+#close {
+    position: absolute;
+    top: 45px; right: 50px;
+    cursor: pointer;
+    color: #444;
+    font-size: 30px;
+}

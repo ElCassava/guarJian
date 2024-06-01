@@ -1,0 +1,187 @@
+*{    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E9F8F9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* navbar keseluruhan */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: transparent;
+
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    transition: 0.5s top ease-in-out;
+}
+
+/* option navbar */
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+}
+
+/* text navbar */
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    font-size: larger;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+/* logo di navbar */
+nav div img{
+    width: 349px;
+    height: 100px;
+    display: flex;
+}
+/* navbar di-hover */
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+/* burger icon */
+
+.menu-icon{
+    font-size: 28px;    
+    display: none;
+}
+
+/* pembatasan  */
+@media only screen and (max-width : 768px){
+    nav{
+        flex-wrap: wrap;
+    }
+
+    nav ul {
+    flex-direction: column;
+    width: 100%;
+    /* display: none; */
+    }
+
+    /* buat burger jsnya */
+    nav ul.hidden{
+        display: none;
+    }
+
+    /* burger kl kecil */
+    .menu-icon{
+        display: flex;
+        align-items: center;
+    }
+
+    .container {
+        width: 100%;
+      }
+    
+    .form .btn {
+        width: 100%;
+    }
+}
+
+
+.container{
+    background-color: #F0E583;
+    border-radius: 25px;
+    width: 812px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header{
+    padding: 30px 0;
+    color: #FF4A4A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control{
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    background-color:  #6FEDD6;
+    border-radius: 25px;
+    font-size: 14px;
+    padding: 12px;
+    display: block;
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color:darkblue;
+}
+
+.form-control.error input {
+    border-color: #df3434;
+}
+
+.form-control.success input {
+    border-color: #39df7e;
+}
+
+.form-control i {
+    position: absolute;
+    right: 12px;
+    top: 40px;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+    display: inline;
+  }
+  
+  
+.form-control small {
+    color: #df3434;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+    display: block; 
+}
+/* tombol form */
+.form .btn{
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    display: block;
+    background-color: #FF4A4A;
+    width: 448px;
+    padding: 15px 0;
+    font-size: 16px;
+    margin: 0 auto;
+}
+/* tmbl dihover */
+.form .btn:hover{
+    background: #c59cd8;
+}

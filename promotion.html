@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>guarJian</title>
+    <link rel="stylesheet" href="promotion .css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+    <!-- bag navbar  -->
+    <nav>
+        <div class="logo">
+            <img src="aset/logo.png" alt="Logo guarJian">
+        </div>
+        <div id = "menu-icon" class="menu-icon">
+            <i class="ph ph-list"></i>
+        </div>
+        <ul id="menu-list" class="hidden">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="promotion.html">Promotion</a>
+            </li>
+            <li>
+                <a href="product.html">Product</a>
+            </li>
+            <li>
+                <a href="about.html">About Us</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact Us</a>
+            </li>
+            
+        </ul>
+    </nav>
+
+    <section class="promotion" id="promo">
+
+    <h1 class="heading"><span>Get Your Best Deals Here!</span></h1>
+    
+    <div class="box-container">
+        <!-- promo 1 -->
+        <div class="box" data-name="p-1">
+            <img src="aset/Promo 1.png" alt="Promo 1">
+            <a href="#" class="btn"></a>
+        </div>
+<!-- promo 2 -->
+        <div class="box"  data-name="p-2">
+            <img src="aset/Promo 2.png" alt="Promo 1">
+            <a href="#" class="btn"></a>
+        </div>
+<!-- promo 3 -->
+        <div class="box" data-name="p-3">
+            <img src="aset/Promo 3.png" alt="Promo 1">
+            <a href="#" class="btn"></a>
+        </div>
+    </div>
+    
+</section>
+
+<section class="product-preview">
+    <!-- produk 1 preview -->
+    <div class="preview active" data-target="p-1">
+        <span id='close' onclick='this.parentNode.parentNode.remove(); return false;'>x</span>
+        <img src="aset/Promotion Product 1.png" alt="">
+    </div>
+
+    <!-- produk 2 preview -->
+    <div class="preview" data-target="p-2">
+        <span id='close' onclick='this.parentNode.parentNode.remove(); return false;'>x</span>
+        <img src="aset/Promotion Product 2.png" alt="">
+    </div>
+    <!-- produk 3 preview -->
+    <div class="preview" data-target="p-3">
+        <span id='close' onclick='this.parentNode.parentNode.remove(); return false;'>x</span>
+        <img src="aset/Promotion Product 3.png" alt="">
+    </div>
+</section>
+
+    <script src="/promotion.js"></script>
+</body>
+</html>
